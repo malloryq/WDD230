@@ -1,0 +1,27 @@
+/* Encase CSS rules in a media query for larger views */
+
+@media (min-width: 768px) {
+    /* Larger view styles */
+
+    /* Navigation */
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin-right: 30px;
+    }
+
+    /* Main */
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /* Adjust card widths */
+    .card {
+        width: calc(50% - 10px);
+    }
+}
