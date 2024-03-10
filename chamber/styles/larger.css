@@ -1,6 +1,6 @@
 /* Larger screen styles */
 
-/* Example: Adjust header size for larger screens */
+/* Adjust header size for larger screens */
 header {
     padding: 20px;
 }
@@ -9,12 +9,12 @@ nav ul li {
     margin-right: 30px;
 }
 
-/* Example: Increase font size for main content */
+/* Increase font size for main content */
 main {
     font-size: 18px;
 }
 
-/* Example: Adjust footer padding */
+/* Adjust footer padding */
 footer {
     padding: 20px;
 }
