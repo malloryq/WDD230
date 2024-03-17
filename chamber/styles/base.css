@@ -1,25 +1,54 @@
-/* Base styles */
+/* Base CSS styles */
 
-body {
-    font-family: Arial, sans-serif;
+/* Reset CSS */
+body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
+/* Typography */
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
-.logo {
-    /* Add styles for logo */
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+header span {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    padding: 10px 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -27,21 +56,101 @@ nav ul li {
     margin-right: 20px;
 }
 
+nav ul li:last-child {
+    margin-right: 0;
+}
+
 nav ul li a {
     color: #fff;
     text-decoration: none;
 }
 
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
 main {
+    max-width: 960px;
+    margin: 0 auto;
     padding: 20px;
 }
 
+/* Footer */
 footer {
     background-color: #333;
     color: #fff;
-    padding: 10px;
+    text-align: center;
+    padding: 20px 0;
 }
 
-.contact-info, .development-info {
-    margin: 10px;
+footer p {
+    margin-bottom: 10px;
+}
+
+#year {
+    font-weight: bold;
+}
+
+#lastModified {
+    font-style: italic;
+}
+
+
+/* Sidebar styles */
+.sidebar {
+    background-color: #af7c7c;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Main content styles */
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.main-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.main-content figure {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.main-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.main-content figcaption {
+    padding: 10px;
+    background-color: rgba(68, 0, 255, 0.89);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.main-content figure:hover {
+    transform: scale(1.05);
+}
+
+.main-content figure:hover figcaption {
+    opacity: 1;
 }

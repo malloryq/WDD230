@@ -1,20 +1,27 @@
-/* Larger screen styles */
+/* Encase CSS rules in a media query for larger views */
 
-/* Adjust header size for larger screens */
-header {
-    padding: 20px;
-}
+@media (min-width: 768px) {
+    /* Larger view styles */
 
-nav ul li {
-    margin-right: 30px;
-}
+    /* Navigation */
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
 
-/* Increase font size for main content */
-main {
-    font-size: 18px;
-}
+    nav ul li {
+        margin-right: 30px;
+    }
 
-/* Adjust footer padding */
-footer {
-    padding: 20px;
+    /* Main */
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /* Adjust card widths */
+    .card {
+        width: calc(50% - 10px);
+    }
 }
