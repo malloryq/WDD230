@@ -154,3 +154,8 @@ footer p {
 .main-content figure:hover figcaption {
     opacity: 1;
 }
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
