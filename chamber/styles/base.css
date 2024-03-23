@@ -42,7 +42,7 @@ header span {
 
 /* Navigation */
 nav {
-    background-color: #333;
+    background-color: #000000;
 }
 
 nav ul {
@@ -61,7 +61,7 @@ nav ul li:last-child {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -78,8 +78,8 @@ main {
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #ffffff;
+    color: #ffffff;
     text-align: center;
     padding: 20px 0;
 }
@@ -137,7 +137,7 @@ footer p {
 .main-content figcaption {
     padding: 10px;
     background-color: rgba(68, 0, 255, 0.89);
-    color: #fff;
+    color: #ffffff;
     position: absolute;
     bottom: 0;
     left: 0;
