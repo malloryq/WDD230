@@ -25,3 +25,9 @@ table {
     border: 1px solid #cacaca;
     text-align: center;
   }  
+
+  caption1 {
+    padding: 8px;
+    border: 1px solid #cacaca;
+    text-align: center;
+  }
