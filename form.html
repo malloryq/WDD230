@@ -7,68 +7,77 @@
     <meta name="description" content="WDD 230 - Web Frontend Development. [Your Full Name]'s course assignment portal.">
     <meta name="author" content="{Mallory Clark}]">
 
-    <!-- External CSS -->
+    
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
 </head>
 <body>
     <header>
-        <!-- Profile Image and Name -->
+        
         <img src="images/profile.jpg" alt="Your Profile Picture">
         <span>Mallory Clark</span>
     </header>
     
     <nav>
-        <!-- Navigation Links -->
+        
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="week01/chamber-site-plan.html">Chamber</a></li>
             <li><a href="#">Site Plan</a></li>
-            <li><a href="form.html">Form</a></li>
             <li><a href="week03/images/landscape.webp">WebP</a>
             <li><a href="week03/lazyload.html">lazyload</a>
             <li><a href="https://codepen.io/malloryq/pen/dyLWJZw"> CodePen</a></li>
             <li><a href="week04/images/exercise.jpg"> Combinator Exercise</a></li>
             <li><a href="week04/tablebuild.html"> Table Build</a></li>
+            <li  class="active"><a href= "index.html">Form</a></li>
         </ul>
     </nav>
 
     <main>
-        <h1>WDD 230: Web Frontend Development</h1>
+        <h1>Web Lab - Form</h1>
+        <form action="record.html" method="get">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}">
+            </div>
+            <div>
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+\-]+@byui\.edu$" title="Please enter a valid email address">
+            </div>
+            <div>
+                <label for="rating">Page Rating:</label>
+                <input type="range" id="rating" name="rating" min="1" max="10" step="1" oninput="ratingOutput.value = rating.value">
+                <output id="ratingOutput">1</output>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
 
-        <div class="temple-wrapper">
-            <picture>
-                <source media="(max-width: 960px)" srcset="images/Fort-Collins-Temple10 small.webp" type="image/webp">
-                <source srcset="images/Fort-Collins-Temple10 large.webp" type="image/webp">
-                <img src="images/temple.JPG" alt="temple">
-            </picture>
-            <div class="temple-label">Nauvoo Temple</div>
-        </div>
-        <section class="card">
-                <h2>Learning Activities</h2>
-            <ul>
-                <!-- Learning Activities will be later -->
-            </ul>
-        </section>
-
-        <section class="card">
-            <h2>Information</h2>
-            <div id="visit-counter">Page visits: <span id="visit-count">0</span></div>
-          
-            <!-- Information placeholders -->
-        </section>
     </main>
 
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94932.41658244935!2d-91.74507644994752!3d41.96510954058772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87e45f7aa02f4251%3A0x55ee60432ce6ddc0!2sCedar%20Rapids%2C%20IA!5e0!3m2!1sen!2sus!4v1710474675183!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
     <footer>
-        <p>&copy; <span id="year"></span> [Mallory Clark], [Iowa, United States]</p>
+        <p>&copy; <span id="year"></span> Mallory Clark, Iowa, United States</p>
         <p id="lastModified"></p>
     </footer>
 
-    <!-- External JavaScript -->
+    
     <script src="scripts/getDates.js"></script>
     <script src="scripts/visitcounter.js"></script>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/formvalidation.js"></script>
+
 </body>
 </html>
