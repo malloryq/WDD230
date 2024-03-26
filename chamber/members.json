@@ -1,0 +1,12 @@
+[
+    {
+      "name": "Company A",
+      "address": "123 Main St, City, Country",
+      "phone": "123-456-7890",
+      "website": "http://www.example.com",
+      "membershipLevel": "Gold"
+      // Add more fields as needed
+    },
+    // Add more member objects
+  ] 
+  
