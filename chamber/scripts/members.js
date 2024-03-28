@@ -1,4 +1,4 @@
-const url = 'data/members.json';
+const url = 'https://malloryq.github.io/wdd230/chamber/data/members.json';
 const membersContainer = document.querySelector('article.grid');
 const menu = document.querySelector('.menu');
 
@@ -13,6 +13,9 @@ async function getMembersData() {
 }
 
 function displayMembers(members) {
+
+    const container = document.getElementById("members-container");
+
     membersContainer.innerHTML = ''; // Clear previous content
     members.forEach(member => {
         const memberCard = document.createElement('div');

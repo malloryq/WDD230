@@ -1,0 +1,55 @@
+[
+    {
+      "name": "Company A",
+      "address": "123 Main St, City, Country",
+      "phone": "123-456-7890",
+      "website": "http://www.example.com",
+      "membershipLevel": "Gold"
+
+    },
+    {
+      "name": "Company B",
+      "address": "456 Elm St, Town, Country",
+      "phone": "987-654-3210",
+      "website": "http://www.companyb.com",
+      "membershipLevel": "Silver"
+    },
+    {
+      "name": "Company C",
+      "address": "789 Oak St, Village, Country",
+      "phone": "111-222-3333",
+      "website": "http://www.companyc.com",
+      "membershipLevel": "Platinum"
+    },
+    {
+      "name": "Company D",
+      "address": "321 Maple St, Hamlet, Country",
+      "phone": "444-555-6666",
+      "website": "http://www.companyd.com",
+      "membershipLevel": "Bronze"
+    },
+    {
+      "name": "Company E",
+      "address": "654 Pine St, Borough, Country",
+      "phone": "777-888-9999",
+      "website": "http://www.companye.com",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "Company F",
+      "address": "987 Cedar St, Township, Country",
+      "phone": "000-111-2222",
+      "website": "http://www.companyf.com",
+      "membershipLevel": "Silver"
+    },
+    {
+      "name": "Company G",
+      "address": "159 Birch St, Municipality, Country",
+      "phone": "333-444-5555",
+      "website": "http://www.companyg.com",
+      "membershipLevel": "Platinum"
+    }
+    
+
+  ] 
+  
