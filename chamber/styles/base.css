@@ -221,3 +221,23 @@ h1 {
 .member-card .button:hover {
     background-color: #0056b3;
 }
+
+/* Grid View */
+.members-container.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.member-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* List View */
+.members-container.list-view .member-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}

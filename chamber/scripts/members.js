@@ -2,6 +2,8 @@ const baseURL = "https://malloryq.github.io/wdd230/chamber/directory.html";
 const membersURL = 'https://malloryq.github.io/wdd230/chamber/data/members.json';
 
 const membersContainer = document.getElementById("members-container");
+const gridViewButton = document.getElementById("grid-view");
+const listViewButton = document.getElementById("list-view");
 
 async function getMembersData() {
     try {
@@ -45,6 +47,17 @@ function displayMembers(members) {
         membersContainer.appendChild(memberCard);
     });
 }
+
+// Toggle between grid and list views
+gridViewButton.addEventListener("click", function() {
+    membersContainer.classList.remove("list-view");
+    membersContainer.classList.add("grid-view");
+});
+
+listViewButton.addEventListener("click", function() {
+    membersContainer.classList.remove("grid-view");
+    membersContainer.classList.add("list-view");
+});
 
 // Load members data and display
 getMembersData()
