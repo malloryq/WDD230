@@ -1,4 +1,4 @@
-const baseURL = "https://malloryq.github.io/wdd230/chamber/";
+const baseURL = "https://malloryq.github.io/wdd230/chamber/directory.html";
 const membersURL = 'https://malloryq.github.io/wdd230/chamber/data/members.json';
 
 const membersContainer = document.getElementById("members-container");
