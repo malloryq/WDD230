@@ -65,13 +65,13 @@
 
     // Toggle between grid and list views
     gridViewButton.addEventListener("click", function() {
-        console.log("Grid view button clicked");
+     
         membersContainer.classList.remove("list-view");
         membersContainer.classList.add("grid-view");
     });
     
     listViewButton.addEventListener("click", function() {
-       
+    
         membersContainer.classList.remove("grid-view");
         membersContainer.classList.add("list-view");
     });
