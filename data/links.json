@@ -1,0 +1,62 @@
+{
+    "weeks": [
+      {
+        "week": "Week 1",
+        "links": [
+          {
+            "url": "week01/chamber-site-plan.html",
+            "title": "site plan"
+          }
+        ]
+      },
+      {
+        "week": "week 2",
+        "links":[
+           
+                {
+                  "url": "week02/bom.html",
+                  "title": "BOM-25"
+                },
+                {
+                    "url": "week02/design.html",
+                    "title": "design"
+                }
+        ]
+      },
+      {
+        "week": "week 3",
+        "links":[
+            {
+                "url": "week03/lazyload.html",
+                "title": "lazyLoading"
+            },
+            {
+                "url": "week03/responsive-images.html",
+                "title": "responsive images"
+            }
+        ]
+      },
+      {
+        "week": "week 4",
+        "links": [
+            {
+                "url": "week04/tablebuild.html",
+                "title": "tablebuild"
+            }
+        ]
+      },
+      {
+        "week": "week 5",
+        "links":[
+            {
+                "url": "week05/prophets.html",
+                "title": "Prophets"
+            },
+            {
+                "url": "week05/weather.html",
+                "title": "weather"
+            }
+        ]
+      }
+    ]
+  }

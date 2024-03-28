@@ -6,7 +6,8 @@ const url = 'https://api.openweathermap.org/data/2.5/weather';
 
 async function apiFetch() {
   try {
-    const response = await fetch(`${url}?lat=49.75&lon=6.64&units=imperial&appid=[enter your key here]`);
+    const response = await fetch(`${url}?lat=49.75&lon=6.64&units=imperial&appid=0000236f2f188e4ecdffcdf64b71cb16
+    `);
     if (response.ok) {
       const data = await response.json();
       displayResults(data);
