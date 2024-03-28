@@ -1,6 +1,4 @@
-// links.js
 
-// Define baseURL and linksURL
 const baseURL = "https://malloryq.github.io/wdd230/";
 const linksURL = "https://malloryq.github.io/wdd230/data/links.json";
 
@@ -10,19 +8,19 @@ async function getLinks() {
       const response = await fetch(linksURL);
       const data = await response.json();
       
-      return data; // Return the data if needed for further processing
+      return data; 
     } catch (error) {
       console.error("Error fetching or parsing JSON data:", error);
     }
   }
   function displayLinks(weeks) {
-    // Get the container element where the links will be added
+    
     const container = document.getElementById("activityLinks");
   
     // Clear existing content
     container.innerHTML = "";
   
-    // Loop through each week in the JSON data
+   
     weeks.forEach((week) => {
       // Create a heading for the week
       const weekHeading = document.createElement("h3");
@@ -57,4 +55,10 @@ async function getLinks() {
   }
   
   // Call the getLinks function to test fetching the data
-  getLinks();
+  getLinks()
+  .then(data => {
+    displayLinks(data.weeks);
+  })
+  .catch(error => {
+    console.error("Error fetching or displaying links:", error);
+  });
