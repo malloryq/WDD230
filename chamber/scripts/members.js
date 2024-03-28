@@ -1,21 +1,19 @@
-const url = 'https://malloryq.github.io/wdd230/chamber/data/members.json';
-const membersContainer = document.querySelector('article.grid');
-const menu = document.querySelector('.menu');
+const baseURL = "https://malloryq.github.io/wdd230/chamber/";
+const membersURL = 'https://malloryq.github.io/wdd230/chamber/data/members.json';
+
+const membersContainer = document.getElementById("members-container");
 
 async function getMembersData() {
     try {
-        const response = await fetch(url);
+        const response = await fetch(membersURL);
         const data = await response.json();
-        displayMembers(data);
+        return data;
     } catch (error) {
         console.error('Error fetching member data:', error);
     }
 }
 
 function displayMembers(members) {
-
-    const container = document.getElementById("members-container");
-
     membersContainer.innerHTML = ''; // Clear previous content
     members.forEach(member => {
         const memberCard = document.createElement('div');
@@ -48,19 +46,11 @@ function displayMembers(members) {
     });
 }
 
-// Toggle view between grid and list
-menu.addEventListener('click', function(event) {
-    if (event.target.tagName === 'BUTTON') {
-        const view = event.target.id;
-        if (view === 'grid') {
-            membersContainer.classList.add('grid');
-            membersContainer.classList.remove('list');
-        } else if (view === 'list') {
-            membersContainer.classList.add('list');
-            membersContainer.classList.remove('grid');
-        }
-    }
+// Load members data and display
+getMembersData()
+.then(data => {
+    displayMembers(data);
+})
+.catch(error => {
+    console.error("Error fetching or displaying members:", error);
 });
-
-// Load members data
-getMembersData();
