@@ -1,0 +1,28 @@
+{
+    "familyName": "Smith",
+    "moveInDate": "2024-03-25",
+    "numberOfPeople": 4,
+    "visitedByBishopric": true,
+    "familyMembers": [
+      {
+        "name": "Joey Smith",
+        "gender": "Male",
+        "birthdate": "1990-05-15"
+      },
+      {
+        "name": "Emmy Smith",
+        "gender": "Female",
+        "birthdate": "1992-08-20"
+      },
+      {
+        "name": "Drew Smith",
+        "gender": "Female",
+        "birthdate": "2015-03-10"
+      },
+      {
+        "name": "David Smith",
+        "gender": "Male",
+        "birthdate": "2018-11-03"
+      }
+    ]
+  }
